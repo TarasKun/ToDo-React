@@ -18,6 +18,10 @@
   border-radius: 4px;
   background: #ffffff;
 }
+.list li .badge {
+  position: relative;
+  left: 5px;
+}
 .list i {
   display: inline-flex;
   margin-right: 10px;

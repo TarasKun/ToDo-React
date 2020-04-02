@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.scss';
 import List from "./components/List";
-import AddListButton from "../src/components/AddButtonList";
+import AddList from "./components/AddList";
+import DB from '../src/assets/db'
 
 function App() {
   return (
@@ -28,11 +29,11 @@ function App() {
                  active: true
              },
              {
-                 color: 'ping',
+                 color: 'pink',
                  name: 'Фільми і серіали'
              }
          ]} isRemovable={true}/>
-         <AddListButton/>
+         <AddList colors={DB.colors}/>
       </div>
       <div className='todo__tasks'> </div>
     </div>
