@@ -1,0 +1,29 @@
+.list {
+  margin-bottom: 30px;
+}
+.list__add-button svg, .list__add-button span {
+  opacity: 0.4;
+}
+.list__add-button svg:hover, .list__add-button span:hover {
+  opacity: 1;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+.list li.active {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  background: #ffffff;
+}
+.list i {
+  display: inline-flex;
+  margin-right: 10px;
+}
+.list i svg path {
+  fill: #7c7c7c;
+}
+
+/*# sourceMappingURL=List.css.map */

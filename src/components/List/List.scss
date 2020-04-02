@@ -1,0 +1,38 @@
+.list {
+  margin-bottom: 30px;
+
+  &__add-button {
+    svg, span {
+      opacity: 0.4;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 12px;
+
+    &.active {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      background: #ffffff;
+    }
+  }
+
+  i {
+    display: inline-flex;
+    margin-right: 10px;
+
+    svg {
+      path {
+        fill: #7c7c7c;
+      }
+
+    }
+  }
+}
