@@ -1,10 +1,10 @@
 .list {
   margin-bottom: 30px;
 }
-.list__add-button svg, .list__add-button span {
+.list__add-button {
   opacity: 0.4;
 }
-.list__add-button svg:hover, .list__add-button span:hover {
+.list__add-button:hover {
   opacity: 1;
 }
 .list li {
@@ -12,6 +12,21 @@
   align-items: center;
   cursor: pointer;
   padding: 10px 12px;
+}
+.list li:hover .list__remove-icon {
+  opacity: 0.2;
+}
+.list li .list__remove-icon {
+  opacity: 0;
+}
+.list li .list__remove-icon:hover {
+  opacity: 0.8;
+}
+.list li span {
+  flex: 1;
+}
+.list li:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 .list li.active {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
@@ -24,7 +39,7 @@
 }
 .list i {
   display: inline-flex;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .list i svg path {
   fill: #7c7c7c;
